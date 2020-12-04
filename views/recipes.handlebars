@@ -1,0 +1,49 @@
+<section class="page_intro" id='recipes_intro' >
+    <h1 class = 'page_title_text'>Recipe collections</h1>
+</section>
+
+<h2>
+  Find an unordered list of our recipes below! Then dive into our recipe recipe books
+  to find how to make your favorite!
+</h2>
+<h3>The box below has both my unordered list and scroll box requirements</h3>
+<div class = 'overflow_test'>
+  <ul>
+    {{#each recipes}}
+      <li>{{this.title}}</li>
+    {{/each}}
+  </ul>
+</div>
+
+<h3>You can also download my favorite recipe here <a class = 'download_button' href = 'img/download.pdf' download>Click to download</a></h3>
+
+<section class = 'recipe_books'>
+  <a href="/asian">
+    <div class = 'book_title'>
+      <img class ='book_img'  src="img/asian.png" alt="Kramer Recipe Book">
+      <p class='category'> Asian dishes </p>
+    </div>
+  </a>
+
+  <a href="/jewish">
+    <div class = 'book_title'>
+      <img class ='book_img'  src="img/jewish.png" alt="Kramer Recipe Book">
+      <p class='category'> Jewish dishes </p>
+    </div>
+  </a>
+
+  <a href="/baked_goods">
+    <div class = 'book_title'>
+      <img class ='book_img'  src="img/baked.png" alt="Kramer Recipe Book">
+      <p class='category'> Baked goods </p>
+    </div>
+  </a>
+
+  <a href="/italian">
+    <div class = 'book_title'>
+      <img class ='book_img'  src="img/italian.png" alt="Kramer Recipe Book">
+      <p class='category'> Italian dishes </p>
+    </div>
+  </a>
+
+</section>

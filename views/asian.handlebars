@@ -1,0 +1,18 @@
+<section class="page_intro" id='recipes_intro' >
+    <h1 class = 'page_title_text'>Asian Recipes</h1>
+</section>
+<div>
+</div>
+
+{{#each recipes}}
+<div class="recipe_container">
+  <h2>{{this.title}}</h2>
+  <img class = 'recipe_img' src={{this.img}} alt={{this.title}}>
+  <div class = 'ing_ins'>
+    <h3> Ingredients you will need!</h3>
+    <p class = 'ingredients'>{{this.ingredients}}</p>
+    <h3> Instructions </h3>
+    <p class = 'instructions'>{{this.instructions}}</p>
+</div>
+</div>
+{{/each}}
